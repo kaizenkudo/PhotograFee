@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous">
+    </script>
+<link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/zXWYtPpt/icon2.png" />
+<title>Edit Profile</title>
+<style>
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+			</style>
+<style>
+
+body,
+input {
+  font-family: 'Poppins'; sans serif;
+}
+
+body{
+	background-image:url("https://i.postimg.cc/5tcKrY8W/elcarito-MHNj-EBe-LTgw-unsplash.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding: 0px;
+	box-sizing: border-box;
+	color: white;
+
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+div.container {
+	display:flex;
+	align-content: center;
+	justify-content: center;
+	width: 60%;
+}	
+
+div.forms-container {
+	display: flex;
+	width: 750px;
+	height: 900px;
+	background-color: black;
+	margin-top: 10px;
+	box-shadow: 0px 0px 20px black;
+}
+
+div.user-info {
+	width: 50%;
+	padding: 9%;
+	background: #ecf0f3;
+	border-radius: 0px 0px 0px 0px;
+}
+
+.logoDiv {
+	width: 50%;
+	padding: 10px;
+	background-color: #081b29;
+	background-image: url('https://i.postimg.cc/NjRk5N2Z/photografee1.png');
+	background-position: center; 
+	background-repeat: no-repeat; 
+}
+
+.logoDiv p {
+	margin-top: 100px;
+	font-size:30px;
+	font-family:poppins;
+	font-weight:bold;
+}
+
+
+img{
+  height: 80px;
+  vertical-align:middle;
+  margin-bottom: 10px;
+}
+span { 
+  font-size: 2.3rem;
+  color: #081b29;
+  letter-spacing: 1px;
+}
+
+.input-field {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 20px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  text-align: left;
+}
+
+.input-field i {
+  text-align: left;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.0rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.text {
+	font-size:small;
+	font-weight: normal;
+}
+
+legend {
+	color: #081b29;
+	font-size: 18px;
+}
+
+fieldset.feedback {
+	height: 390px;
+}
+
+fieldset {
+	border: none;
+}
+
+#comments {
+  
+  font-size: 12px;
+  font-family:poppins;  
+}
+button {
+  display: block;
+  width: 100%;	
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  margin-top: 15px;
+  background: #081B29;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+button:hover {
+  box-shadow: none;
+  background: white;
+  color: #081B29;
+}
+.input-field:hover {
+  opacity: 0.700;
+}
+</style>
+</head>
+
+<body>
+
+
+<form action="PROFILE.html" method="post">
+
+<center>
+<div class="container">
+	<div class="forms-container">
+		<div class="user-info">
+		<strong><span>Photografee</span></strong><br>
+		<p style="margin-top: -10px; font-family:poppins; font-size:20px;letter-spacing: 8px;color: #081b29;">EDIT PROFILE</p>
+<img src="https://i.postimg.cc/Y9t67GKL/borderimage.png" alt="display profile image" class="center">
+  <form action="/action_page.php">
+    <input id="imageUpload" type="file"  accept="image/png, image/jpeg"
+       name="profile_photo" placeholder="Photo" required="" style="margin-top: 10px;color: #081b29;" >
+	<fieldset>
+		<legend> Basic Information</legend>
+
+	<div class="input-field">
+        <i class="fas fa-user"></i>
+            <input type="text" id="name" size="30" maxlength="100" placeholder="Display Name (e.g. John Doe)" required>
+    </div>
+    
+    <div class="input-field">
+        <i class="fas fa-heading"></i>
+            <input type="title" name="title" size="30" maxlength="100" placeholder="Title (e.g. Cute Spectator)" required>
+    </div>
+	
+	<div class="input-field">
+        <i class="fas fa-map-marker-alt"></i>
+            <input type="location" name="location" size="30" maxlength="100" placeholder="Current Location" required>
+			
+    </div>
+	</fieldset><br/>
+	
+	<center>
+	<fieldset class="feedback">
+		<legend class="feedback">Optional Information</legend>
+			<div class="input-field">
+			<i class="fa fa-facebook"></i></a>
+            <input type="url" id="url" name="url" size="30" maxlength="100" placeholder="Facebook profile"/>
+			</div>
+
+			<div class="input-field">
+			<i class="fa fa-twitter"></i></a>
+            <input type="url" id="url" name="url" size="30" maxlength="100" placeholder="Twitter profile"/>
+			</p>
+			</div>
+
+			<div class="input-field">
+			<i class="fa fa-instagram"></i></a>
+            <input type="url" id="url" name="url" size="30" maxlength="100" placeholder="Instagram profile"/>
+			</p>
+			</div>
+			
+			<div class="input-field">
+			<i class="fa fa-linkedin"></i></a>
+            <input type="url" id="url" name="url" size="30" maxlength="100" placeholder="Linkedin profile"/><br><br>
+	<p><label for="comments" style="color: #081b29;">
+	About</label><br />
+	<textarea rows="5" cols="50" id="comments" style="border-radius: 30px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;background: #ecf0f3;">
+	</textarea></p>
+	<button type="submit">SAVE</button>
+			</fieldset>
+		</center></div>
+
+			<div class="logoDiv">
+			</div>
+
+		</div>
+	</div>
+</form>
+<script type="text/javascript">
+
+	window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+</body>
+</html>

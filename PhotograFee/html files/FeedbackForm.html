@@ -1,0 +1,324 @@
+<!DOCTYPE html> 
+<html>
+<head>
+		<script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/zXWYtPpt/icon2.png" />
+		<title>Feedback Form</title></a>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*{
+	margin: 0;
+	padding: 0; 
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	outline: none;
+	color: #FFFFFF; 
+}
+section{
+	position: absolute; 
+	height: 250%;
+	width: 100%;
+	background: url('https://i.postimg.cc/K8pV0x2S/splash.jpg');
+	background-position:right;
+	background-repeat: no-repeat;  
+	background-attachment: fixed;
+	background-size: cover;
+	opacity: 0.99;
+}
+
+body{
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+	align-items: center;
+	justify-content: center; 
+	margin: 25px 375px 75px;
+	padding: 10px;
+	
+}
+input[type=checkbox],
+input .checkbox-reason{
+	float: left;
+	border: 0px;
+	clear: none;
+	padding: 0px 1em 0px 8px;
+	width: 15px;
+	height: 15px; 
+	text-align: center;
+}
+
+input[type=radio],
+input .radio{
+	float: left;
+	border: 0px;
+	clear: none;
+	padding: opx 1em 0px 8px;
+	width: 15px;
+	height: 15px; 
+	text-align: center;
+}
+
+#eto { 
+	border-width:medium;
+	background: #020917;
+	opacity:1.2;
+}
+
+
+.container{
+	max-width: 700px;
+	width: 100%;
+	max-height: 90%;
+	opacity: 0.90;
+	padding: 25px 30px;	
+	border-radius: 7px; 
+	background: #29455A;
+
+ }
+.container form{
+	max-width: 700px;
+	width: 100%;
+	height: 90%; 
+	text-align: center;
+	padding: 25px 30px;
+	border-radius: 7px; 
+	background: #29455A;
+	
+}
+
+.h1{
+	padding: 10px 10px 10px 10px;
+	text-align: justify; 
+	float:center;
+	line-height: 0.9; 
+	
+}
+
+.h2{
+	color: #FFFFFF; 
+	
+}
+
+
+label {
+      float: left;
+      clear: none;
+      display: block;
+      padding: 0px 1em 0px 8px;
+}
+
+form .id{
+	position: relative;
+}
+
+.id i{
+	position:absolute;
+	font-size: 30px;
+	top: 50%;
+	right: 50px;
+	transform: translate(-50%, -50%);	
+}
+
+form input {
+	width: 90%;
+	height: 23px;
+	margin: 4px 4px 4px 4px;
+	border: 1px solid #081B29;
+	border-radius:15px;
+	background: #081B29;
+	padding: 0 15px;
+	padding-right:45px;
+	font-family: 'Montserrat', sans-serif;
+	font-size:20px;
+}
+
+form textarea{
+	padding: 5px 15px;
+	border: 1px solid #081B29;
+	border-radius: 15px;
+	background:  #081B29;
+	padding: 0 15px;
+	font-size:19px;
+	width: 90%;
+	height: 100px;
+	margin: 4px 0 4px 0;
+}
+
+form button{
+	margin-top: 5px;
+	border: none;
+	background:  #081B29;
+	color: #FFFFFF ;
+	padding: 10px 0;
+	width: 100%;
+	font-size: 20px;
+	opacity: 100%;
+	font-weight: 800;
+	cursor: pointer;
+	border-radius: 3px;
+	border-weight: medium; 
+	float: center; 
+	font-family:arial;
+}
+
+form input:focus,
+form textarea:focus{
+	border: 1px solid;
+	color:#FFFFFF;
+	transition: all 0.3s ease;
+	}
+
+form input:focus::placeholder,
+form textarea:focus::placeholder{
+	padding-Left: 4px;
+	color: #FFFFFF;
+	transition: all 0.3s ease;
+	}
+	
+form input:focus + i{
+	color: #FFFFFF;
+	transition: all 0.3s ease;
+}
+
+button:hover{
+	opacity: 0.700;
+	
+}
+
+</style>
+<body>
+	<section></section>
+	<fieldset style="width: 490px; margin: 0px auto; border-color:black; border-radius: 10px; box-shadow: 5px 10px black;">
+	<div class="container" style="box-shadow: 5px 10px black;">
+		<form> 
+			<div class="myHeading">
+		<h1 style="font-size: 45px;display:inline-block; vertical-align:middle;"> Feedback Form</h1> </div>
+			<p style="font-size: 12px; font-weight:italic; margin-bottom: -10;">Please give us a feedback on your experience with us so far.</p>
+			<br>
+			<fieldset id="eto" style = "width: 490px; margin: 0px auto;border-radius: 10px;box-shadow: 4px 4px 4px 4px black;">
+			<legend>
+			Customer Details:
+				</legend>
+			<div class ="user">
+				<input type="text" style= "width: 90%; height: 40px;" id="name" placeholder=" Full Name">
+				<i class="fas fa-user"></i>
+			</div> 
+			<div class ="user">
+				<input type="email" style= "width: 90%; height: 40px;" id="email" placeholder=" Email Address">
+				<i class="fas fa-envelope"></i>
+			</div> 
+			<div class ="user">
+				<input type="tel" style= "width: 90%; height: 40px;" id="phone" name="phone" pattern="[0-9]{4}[0-9]{3}[0-9]{4}" placeholder=" Contact Number">
+				<i class="fas fa-phone"></i>
+			</div> 
+			<br>
+			</fieldset>
+		<br>
+		<fieldset id="eto" style="width: 495px; margin:  0px auto; border-radius: 10px;box-shadow: 5px 10px black;">
+			<legend>	
+			Your Feedback:
+			</legend>
+			<br>
+			<div class ="custom-select">
+	
+			<label for="hear-about" style="text-align:center; font-family:'Montserrat',sans-serif; font-size: 17px;padding:5px;margin-left: 10px;">How did you hear about us?</label>
+				<select name="referrer" id="hear-about" style="size: 10px; width: 35%;transition: all .5s;padding: 5px; border: 1px;
+				background-color: #081B29; border-radius: 4px;">
+					<option value="advertisements">Advertisements</option>
+					<option value="referral">Referral</option>
+					<option value="news outlets">News Outlets</option>
+					<option value="others">Others</option></select></div>
+				<div style="margin-left: 12px;">
+					<label style="font-size: 14px; text-align:left; margin-left: 135px;">If others, please specify:</label>
+				<input style="font-family: arial; font-size: 17px;" type="text" name="others-hearAbout" size="50" maxlength="150" placeholder="Please specify here..." />
+				</div> 
+			
+			<div id="checkbox-reason" style="padding:5px;">
+			<br>
+			<label style="text-align:center; font-family:'Montserrat',sans-serif; font-size: 16px;">What made you use our website?</label></div>
+			<br>
+			<div style="margin-left:13px; font-size: 14px;font-family:arial;">
+				<input type="checkbox" id="sa" name="reason"
+				value="supporting advocacy" /> 
+				<label for="sa" style="font-size:14px;font-family:arial;">Support Advocacies</label>
+				<input type="checkbox" id="bp" name="reason"
+				value="beautiful pieces" /> 
+				<label for="bp" style="font-size:14px;font-family:arial;" >Looking For Photographers</label>
+				<input type="checkbox" name="reason"
+				value="others"/>
+				<label for="others" style="font-size:14px; font-family:arial;">Others</label>
+				<label style="font-size: 14px; text-align:left; margin-left: 135px;">If others, please specify:</label>
+				<input type="text" style="font-family: arial; font-size: 17px;" name="others-reason" size="50" maxlength="150" placeholder="Please specify here..." />
+			
+			</div>
+			<div id="rating-1" style="font-size:15px; font-align:center;padding:5px; margin-left: 4px">
+			<br>
+			<label style= "text-align: center; font-family:'Montserrat',sans-serif;; font-size: 16px; margin-top: -10;">What is your overall experience using this website?</label></div> <br>
+			<div style="margin-left:55px; font-size: 15px;">	
+				<label class="radio-inline"><input type="radio"  name="experience" value="Excellent" />
+					Excellent</label>
+				<label class="radio-inline"><input type="radio"  name="experience" value="Good" />
+					Good</label>
+				<label class="radio-inline"><input type="radio" name="experience" value="Average" />
+					Average</label>
+				<label class="radio-inline"><input type="radio" name="experience" value="Bad" />
+					Bad</label><br>	
+			</div>
+			
+			<div id="rating-4" style="text-align: center; font-family:arial; font-size: 15px; margin-left:4px; padding:5px;">
+				<br>
+				<label style="font-family:'Montserrat',sans-serif; font-size: 17px; margin-top:-3;">How easy was it to use this website?</label></div><br>
+				<div style="margin-left:100px;">
+				<i><label style= "text-align: center; font-family:arial; font-size: 13px; margin-bottom:-10; margin-top: -10;">where 1 is 'very hard' while 5 is 'very easy'</label></i>
+				
+				<br>
+					<label class="radio-inline"><input type="radio"  name="recommend" value="very hard" />1</label>
+						<label class="radio-inline"><input type="radio"  name="recommend" value="hard" />2</label>
+						<label class="radio-inline"><input type="radio"  name="recommend" value="medium" />3</label>
+						<label class="radio-inline"><input type="radio"  name="recommend" value="easy" />4</label>
+						<label class="radio-inline"><input type="radio"  name="recommend"  value="very easy" />5</label>
+			</div>
+			<br> 
+			<div id="rating-2" style="font-size: 15px; margin-left: 4px; padding:5px;">
+				<br>
+				<label style= "text-align: center;font-family:'Montserrat',sans-serif;; font-size: 16px; ">Will you visit this website again?</label></div> <br>
+				<div style="margin-left:106px;">
+						<input type="radio" name="buy" value="yes" /><label  class="radio-inline">Yes</label>
+						<input type="radio" name="buy" value="no" /><label  class="radio-inline">No</label>
+						<input type="radio" name="buy" value="maybe" /><label   class="radio-inline">Maybe</label>
+					<br> 
+				</div>
+				
+			<div id="rating-3" style="text-align: center; font-family:arial; font-size: 15px; margin-left:4px; padding:5px;">
+				<br>
+				<label style="font-family:'Montserrat',sans-serif;; font-size: 15px;">How likely are you to recommend this website to others?</label></div><br>
+				<div style="margin-left:100px;">
+				<i><label style= "text-align: center; font-family:arial; font-size: 13px; margin-bottom:-3; margin-top: -10;">Where 1 is 'not likely' while 5 is 'very likely'</label></i>
+				
+				<br>
+					<label class="radio-inline"><input type="radio"  name="recommend1" value="yes" />1</label>
+						<label class="radio-inline"><input type="radio"  name="recommend1" value="yes" />2</label>
+						<label class="radio-inline"><input type="radio"  name="recommend1" value="yes" />3</label>
+						<label class="radio-inline"><input type="radio"  name="recommend1" value="no" />4</label>
+						<label class="radio-inline"><input type="radio"  name="recommend1"  value="maybe" />5</label>
+			</div>
+				<br> 
+				<br>
+			<div id="comment-add" >
+			<label style="margin-top: -10; font-family:'Montserrat',sans-serif; font-size: 17px; margin-left: 10px;"> Have any additional comments?</label> <br>
+				<textarea style="font-family: arial; font-size: 17px;  resize:none;" cols ="15" rows= "10"  placeholder="Enter additional comments here..."></textarea>
+		</fieldset> 
+			<br>
+			<div id="fff">
+			<br>
+				<button type="submit" style="float:center; font-family:'Montserrat', sans serif ;" value="Submit review" id="button1"><a href="feedback_thankyou.html">SUBMIT</button> </div></a>
+			</div> 
+		</div>
+		</fieldset>
+		</form>
+	</div>
+	</div>
+	
+	
+</body>
+</html> 

@@ -1,0 +1,157 @@
+
+#image-container {
+	margin-right: 50px;
+    text-align: center;
+    padding: 40px;
+    background-color: none;
+}
+
+div.image-description {
+	position: relative;
+    font: 12px "montserrat", sans-serif;
+    color: white;
+    margin: 6px;
+    text-align: left;
+    line-height: 14px;
+    height: 28px;
+    overflow: hidden;
+}
+
+div.image-description a{
+  color: white;
+}
+
+div.image-title {
+	position: relative;
+    font: 12px "Arial", sans-serif;
+    color: white;
+    margin: 6px;
+    text-align: left;
+    line-height: 14px;
+    height: 14px;
+    overflow: hidden;
+}
+
+
+.amazingcarousel-next {
+	overflow: hidden ; 
+	position: absolute ; 
+	cursor: pointer ; 
+	width: 48px ; 
+	height: 48px ; 
+	background: url("https://i.postimg.cc/7ZsNrJfF/arrows.png") right top no-repeat; 
+    background-image: url(https://i.postimg.cc/7ZsNrJfF/arrows.png) !important ;
+    background-position-x: right;
+    background-position-y: top  ;
+    background-size: initial  ;
+    background-repeat-x: no-repeat  ;
+    background-repeat-y: no-repeat  ;
+    background-attachment: initial  ;
+    background-origin: initial  ;
+    background-clip: initial  ;
+    background-color: initial  ;
+    display: block  ;
+}
+
+
+.amazingcarousel-prev {
+	overflow: hidden ; 
+	position: absolute ; 
+	cursor: pointer ; 
+	width: 48px ; 
+	height: 48px ; 
+	background: url("https://i.postimg.cc/7ZsNrJfF/arrows.png") left top no-repeat; 
+    background-image: url(https://i.postimg.cc/7ZsNrJfF/arrows.png) !important ;
+    background-position-x: right  ;
+    background-position-y: top  ;
+    background-size: initial  ;
+    background-repeat-x: no-repeat  ;
+    background-repeat-y: no-repeat  ;
+    background-attachment: initial  ;
+    background-origin: initial  ;
+    background-clip: initial  ;
+    background-color: initial  ;
+    display: block  ;
+}
+
+#image-container {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+#image-container:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+div.amazingcarousel-bullet.amazingcarousel-bullet-0 {
+	background:"image-bullets.png" left bottom no-repeat !important; 
+	background-image: url(https://i.postimg.cc/BQHRcYSS/image-bullets.png) !important; 
+	position: relative;
+    padding: 0px;
+    float: left;
+    margin: 0px 4px;
+    width: 160px;
+    height: 16px;
+    cursor: pointer;
+    display: block; 
+}
+
+div.amazingcarousel-bullet.amazingcarousel-bullet-1 {
+	background-image: url(https://i.postimg.cc/BQHRcYSS/image-bullets.png) !important; 
+	position: relative;
+    padding: 0px;
+    float: left;
+    margin: 0px 4px;
+    width: 160px;
+    height: 16px;
+    cursor: pointer;
+    display: block; 
+}
+
+div.amazingcarousel-bullet.amazingcarousel-bullet-2 {
+	background-image: url(https://i.postimg.cc/BQHRcYSS/image-bullets.png) !important; 
+	position: relative;
+    padding: 0px;
+    float: left;
+    margin: 0px 4px;
+    width: 160px;
+    height: 16px;
+    cursor: pointer;
+    display: block; 
+}
+
+/* Add Animation */
+.modal-content, #image-container {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}

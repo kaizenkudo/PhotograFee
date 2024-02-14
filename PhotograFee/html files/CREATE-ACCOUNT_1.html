@@ -1,0 +1,165 @@
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/zXWYtPpt/icon2.png" />
+<title>Create Account | Basic Information </title>
+</head>
+
+			<style>
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+			</style>
+			
+<style>
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ecf0f3;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: poppins;
+}
+.container {
+  width: 450px;
+  height: 540px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+img{
+  height: 80px;
+  vertical-align:middle;
+}
+span { 
+  font-size: 2.3rem;
+  color: #081B29;
+}
+.inputs {
+  text-align: left;
+  margin-top: 10px;
+  color: #081B29;
+}
+
+label, input, button {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label:nth-of-type(2) {
+  margin-top: 12px;}
+  
+
+input[type="name"] {
+  width: 100%;
+  padding: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 25px;
+  }
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  padding-left: 10px;  
+  border-radius: 25px;
+  }
+  
+input[type="checkbox"] {
+  width: 20%;
+  padding: 10px;
+  text-align: center;  
+  border-radius: 25px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  }
+  
+button {
+  display: block;
+  width: 100%;	
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  margin-top: 15px;
+  background: #081B29;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+button:hover {
+  box-shadow: none;
+  background: white;
+  color: #081B29;
+}
+</style>			
+<body>
+<form action="CREATE-ACCOUNT_2.html" method="post">
+<div class="container">
+  <img src="https://i.postimg.cc/zXWYtPpt/icon2.png">
+  <strong><span>PHOTOGRAFEE</span></strong>
+  <h3 style="font-size:1em;font-family: 'Montserrat', sans-serif;">  BASIC INFORMATION </h3>
+  <div class="inputs">
+    <label>First Name</label>
+		<input type="text" id="fname" name="fname" style="background: #ecf0f3;
+		width: 100%;
+		padding: 8px;
+		padding-left: 10px;
+		border-radius: 25px;
+		border-color: none;
+		box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+		font-family:'Montserrat', sans serif;" placeholder="Marco" required>
+	<label>Last Name</label>
+		<input type="text" id="lname" name="lname" style="background: #ecf0f3;
+		width: 100%;
+		padding: 8px;
+		padding-left: 10px;
+		border-radius: 25px;
+		border-color: none;
+		box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+		font-family:'Montserrat', sans serif;" placeholder="Hamilton" required>
+	<label for="gender">
+			Gender
+			</label>
+	<select name="gender" id="gender" 
+		style="background: #ecf0f3;
+		width: 100%;
+		padding: 5px;
+		color: gray;
+		padding-left: 10px;
+		border-radius: 25px;
+		border-color: none;
+		box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+		font-family:'Montserrat', sans serif;"required >
+			<option value="gender">Male</option>
+			<option value="gender">Female</option>
+			<option value="gender">Non-Binary</option>
+			</select>
+	<label for="birthday">Birthday</label>
+		<input type="date" id="birthday" name="birthday"
+		style="background: #ecf0f3;
+		color: gray;
+		padding: 8px;
+		padding-left: 10px;
+		border-radius: 25px;
+		box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+		font-family:'Montserrat', sans serif;
+		border-radius: 25px;
+		text-align:left;" required >
+	</br>
+        <label><input type="checkbox" required>I agree to the <a href="PrivacyPolicy.html" style="color:#081B29;" required>
+		Privacy Policy</a></label>
+    <button type="submit">NEXT</button>
+  </div>
+</div>
+</body>
+</html>

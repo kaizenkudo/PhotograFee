@@ -1,0 +1,209 @@
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/zXWYtPpt/icon2.png" />
+<title>Create Account | Personalization and Account Information </title>
+</head>
+
+			<style>
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+			</style>
+<style>
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ecf0f3;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: poppins;
+}
+.container {
+  width: 810px;
+  height: 640px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+img{
+  height: 80px;
+  vertical-align:middle;
+}
+span { 
+  font-size: 2.3rem;
+  color: #081B29;
+  letter-spacing: 1px;
+}
+.center{
+  margin-right: auto; 
+  margin-left: 190px;
+  width: 15%;
+  height: 20%;
+ }
+
+.inputs {
+  text-align: left;
+  margin-top: 10px;
+  color: #081B29;
+}
+
+label, input, button {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+input[type="name"] {
+  width: 100%;
+  padding: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 25px;
+  }
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 25px;
+}
+input[type="password"] {
+  width: 32%;
+  padding: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 17px;
+  border-radius: 25px;
+}
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+input[type="file"] {
+  margin-right: auto; 
+  margin-left: 530px;
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+  }
+button {
+  display: block;
+  width: 100%;	
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  margin-top: 15px;
+  background: #081B29;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+button:hover {
+  box-shadow: none;
+  background: white;
+  color: #081B29;
+}
+</style>
+<body>
+<form action="CREATE-ACCOUNT_3.html" method="post" autocomplete="always">
+<div class="container">
+  <img src="https://i.postimg.cc/zXWYtPpt/icon2.png" />
+  <strong><span>PHOTOGRAFEE</span></strong>
+  <img src="https://i.postimg.cc/Y9t67GKL/borderimage.png" alt="display profile image" class="center">
+  <form action="/action_page.php">
+   <input type="file" id="myFile" accept="image/png, image/jpeg" name="filename" style="margin-top: 10px;" required
+  </form>
+  <h3 style="font-size:1em;font-family: 'Montserrat', sans-serif;">PERSONALIZATION AND ACCOUNT INFORMATION </h3>
+  <label>Username</label>
+	<input type="name" id="username" style="background: #ecf0f3;
+		color: gray;
+		padding: 8px;
+		padding-left: 10px;
+		border-radius: 25px;
+		box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+		font-family:'Poppins', sans serif;
+		border-radius: 25px;
+		text-align:left;" placeholder="Minimum of 6 alphanumeric characters." required>
+  <label>Email Address</label>
+  <input type="email" id="email" style="background: #ecf0f3;
+		color: gray;
+		padding: 8px;
+		padding-left: 10px;
+		border-radius: 25px;
+		box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+		font-family:'Poppins', sans serif;
+		border-radius: 25px;
+		text-align:left;" placeholder="abcde12345@gmail.com" required>
+<div class="input-group">
+  <label>Password</label>
+  <input type="password" style="background: #ecf0f3;
+		color: gray;
+		padding: 8px;
+		padding-left: 10px;
+		border-radius: 25px;
+		box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+		font-family:'Poppins', sans serif;
+		border-radius: 25px;
+		text-align:left;" required>
+  <span class="input-group-btn" style="width:0px;"></span>
+  <label>Retype Password</label>
+  <input type="password" style="background: #ecf0f3;
+		color: gray;
+		padding: 8px;
+		padding-left: 10px;
+		border-radius: 25px;
+		box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+		font-family:'Poppins', sans serif;
+		border-radius: 25px;
+		text-align:left;" required>
+  <span class="input-group-btn" style="width:0px;"></span>
+	</div>
+  <label>Contact Number</label>
+  <input type="tel" id="phone" name="phone" placeholder="0999-453-6785" 
+   pattern="[0-9]{4}[0-9]{3}[0-9]{4}" style="background: #ecf0f3;
+		color: gray;
+		padding: 8px;
+		padding-left: 10px;
+		border-radius: 25px;
+		box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+		font-family:'Poppins', sans serif;
+		border-radius: 25px;
+		text-align:left;" required>
+<label for="updates">
+		Updates and Notifications
+			</label></br>
+<select name="updates" id="updates"
+		style="background: #ecf0f3;
+		width: 100%;
+		padding: 5px;
+		padding-left: 10px;
+		margin-bottom: 3px;
+		border-radius: 25px;
+		box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+		font-family: 'Poppins', sans serif;">
+			<option value="updates">Once a Week</option>
+			<option value="updates">Twice a Week</option>
+			<option value="updates">Everyday</option>
+			<option value="updates">None</option>
+			</select>
+<button type="submit">SIGN-UP</button>
+</body>
+</style>
+</html>

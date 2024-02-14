@@ -1,0 +1,40 @@
+.news-container{
+  padding: 20px 20px;
+  text-align: center;
+  color: white;
+  float:left;
+}
+
+.email-box{
+  height: 40px;
+  justify-content: center;
+  display: flex; /*its better to use inline-flex*/
+}
+.email-box i{
+  background: #2f3542;
+  width: 40px;
+  line-height: 40px;
+}
+.tbox,.btn{
+  border: none;
+  outline: none;
+}
+.tbox{
+  width: 0px;
+  transition: 0.6s;
+}
+.email-box:hover > .tbox,.tbox:focus{
+  width: 360px;
+  padding: 0 10px;
+  background: white;
+  -moz-box-shadow: 0 0 5px #020917;
+  -webkit-box-shadow: 0 0 5px #020917;
+  box-shadow: 0 0 5px #020917;
+}
+.btn{
+  background: #2f3542;
+  color: white;
+  padding: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

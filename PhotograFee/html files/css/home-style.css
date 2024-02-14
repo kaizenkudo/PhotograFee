@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: "Mosk Extra-Bold 800";
+  src: url("Mosk Extra-Bold 800.ttf");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+fieldset{
+  padding:20px;
+  border-radius:4px !important;
+}
+
+img.logo {
+    width: 150px;
+    height: 150px;
+}
+
+div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+  min-height: 100vh;
+}
+
+div.Login-buttons a{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+.section-main{
+  background-color:#081B29;
+  position: relative;
+  width: 100%;
+  min-height: 45vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 20px 100px;
+  border-bottom: 1px solid #29455A
+}
+
+.section-main h1{
+  font-family: poppins;
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+.section-main i{
+  font-family: georgia;
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+div.body-tagline {
+  color: white;
+}
+
+div.freelance {
+    color: white;
+}
+
+div.recommendations-box {
+  color:white;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+div.recommendations a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 5px;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  transition: 0.6s;
+  border-bottom: 1px solid #29455A;
+}
+
+header.sticky{
+  background: #29455A;
+  padding: 15px 100px;
+}
+
+header .brand{
+  font-family: "Mosk Extra-Bold 800";
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .btn{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+#recommendation:hover {
+    border-color: #A7AFAF;
+}
+
+.section-two{
+  min-height: 55vh;
+  background: #081B29;
+  padding: 20px 100px;
+}
+
+.section-two h2{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+.section-two p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.amazingcarousel-image-img
+{
+box-shadow: 10px 10px 10px #020917;
+}
+
+.section-three{
+  min-height: 30vh;
+  background: #ffffff;
+  padding: 20px 100px;
+}
+
+.section-copyright {
+  min-height: 3vh;
+  background: #020917;
+  padding: 20px 100px;
+}
+
+#copyright {
+    color: white;
+}
+
+@media (max-width: 1060px){
+  header .btn{
+    display: block;
+  }
+
+  header .menu{
+    position: fixed;
+    background: #1483D5;
+    flex-direction: column;
+    min-width: 400px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+@media (max-width: 630px){
+  .section-main h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+

@@ -1,0 +1,42 @@
+header {
+  background:#081B29;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  transition: 0.6s;
+  border-bottom: 1px solid #29455A;
+}
+
+header.sticky{
+  background: #29455A;
+  padding: 15px 100px;
+}
+
+header .brand{
+  font-family: "Mosk Extra-Bold 800";
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .btn{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
